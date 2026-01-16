@@ -2,13 +2,19 @@
 #installing packages
 install.packages("readr")
 install.packages("dplyr")
-install.packages("ggplot2")
+remove.packages("ggplot2")
+remove.packages("rlang")
+install.packages("rlang", dependencies = TRUE)
+install.packages("ggplot2", dependencies = TRUE)
+
 
 #libraries
 library(readr)
 library(dplyr)
 library(ggplot2)
 library(tidyr)
+library(rlang)
+
 
 #reading dataset
 netflix <- read_csv("Data/netflix_titles.csv")
@@ -129,7 +135,6 @@ netflix_clean %>%
     labs(title = "Top 10 Countries by Netflix Titles", 
         x = "Country",
         y = "Number of Titles")
-
 # 2. How has the number of titles added to Netflix changed over the years?
 
 #Review if date_added is clean in the dataset
