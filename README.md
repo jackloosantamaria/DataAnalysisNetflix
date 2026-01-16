@@ -4,7 +4,7 @@ This project is a data analysis of Netflix movies and TV shows. The goal is to e
 
 I wrote an R script (`analysis.R`) that load the dataset, cleans it, checks for missing values, splits categories into individual rows, and performs grouped analyses to answer specific questions. The purpose of this project is to improve my skills in R programming and learn how to handle real-world datasets efficiently.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=qgqJq0iAPX0)
 
 # Development Environment
 
